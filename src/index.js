@@ -7,6 +7,6 @@ app.get("",(req,res)=>{
     res.json({name:"Thilak Vikram R"})
 })
 
-app.listen(3000,err=>{
+app.listen(3000,"0.0.0.0",err=>{
     console.log("Executed Successfully With Code Success")
 })
