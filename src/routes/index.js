@@ -1,7 +1,7 @@
 import express from "express"
 import Warehouse_Stock_findMany from "../database/models/WarehouseStock/methods/findMany.js"
 import { Parser } from "json2csv"
-import { ApiRouter } from "./api.js"
+import ApiRouter from "./api.js"
 
 const app = express()
 
