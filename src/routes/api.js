@@ -10,6 +10,6 @@ export default ApiRouter.get("/getCurrentInventoryData",(req,res)=>{
         const parser = new Parser()
         res.setHeader("Content-Type", "text/csv")
         res.setHeader("Content-Disposition", "attachment; filename=users.csv")
-        res.send(parser(data2))
+        res.send(parser.parse(data2))
     })
 })
