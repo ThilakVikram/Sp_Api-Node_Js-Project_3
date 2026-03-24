@@ -1,5 +1,5 @@
 import { Router } from "express";
-import WarehouseStockModelfindMany from "../database/models/WarehouseStock/methods/findMany";
+import WarehouseStockModelfindMany from "../database/models/WarehouseStock/methods/findMany.js";
 import { Parser } from "json2csv";
 
 const ApiRouter = Router()
