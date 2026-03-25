@@ -19,6 +19,13 @@ const app = express()
 
 app.use("/api",ApiRouter)
 
+app.get("",(req,res)=>{
+    console.log("Received a Request")
+    res.json({
+        "status":"Success"
+    })
+})
+
 app.listen(3000,"0.0.0.0",err=>{
     console.log("Listening on Port "+3000)
 })
