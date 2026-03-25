@@ -21,7 +21,9 @@ app.use("/api",ApiRouter)
 
 app.get("",(req,res)=>{
     console.log("Received a Request")
-    res.send("hi")
+    res.json({
+        "status":"Success"
+    })
 })
 
 app.listen(3000,"0.0.0.0",err=>{
